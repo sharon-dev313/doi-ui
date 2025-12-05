@@ -1,23 +1,14 @@
-import logoDark from "./logo-dark.svg";
-import logoLight from "./logo-light.svg";
+import {Accordion, AccordionItem} from '@heroui/accordion'
 
 export function Welcome() {
+
+  const defaultContent =
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
+
   return (
     <main className="flex items-center justify-center pt-16 pb-4">
       <div className="flex-1 flex flex-col items-center gap-16 min-h-0">
         <header className="flex flex-col items-center gap-9">
-          <div className="w-[500px] max-w-[100vw] p-4">
-            <img
-              src={logoLight}
-              alt="React Router"
-              className="block w-full dark:hidden"
-            />
-            <img
-              src={logoDark}
-              alt="React Router"
-              className="hidden w-full dark:block"
-            />
-          </div>
         </header>
         <div className="max-w-[300px] w-full space-y-6 px-4">
           <nav className="rounded-3xl border border-gray-200 p-6 dark:border-gray-700 space-y-4">
@@ -41,6 +32,17 @@ export function Welcome() {
             </ul>
           </nav>
         </div>
+        <Accordion>
+          <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
+            {defaultContent}
+          </AccordionItem>
+          <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
+            {defaultContent}
+          </AccordionItem>
+          <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
+            {defaultContent}
+          </AccordionItem>
+        </Accordion>      
       </div>
     </main>
   );
