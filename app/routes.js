@@ -1,6 +1,8 @@
-import { index, route } from "@react-router/dev/routes";
+import { index, route, layout } from "@react-router/dev/routes";
 
 export default [
-    index("routes/home.jsx"),
-    route("doi-token", "routes/doi-token.jsx")
+    layout("routes/layout.jsx", [
+        index("routes/home.jsx"),
+        route("doi-token", "routes/doi-token.jsx"),
+    ]),    
 ];
