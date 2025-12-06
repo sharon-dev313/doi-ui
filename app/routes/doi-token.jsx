@@ -2,7 +2,7 @@ import Hero from "../components/ui/Hero";
 import Doi_token_SubSec from "../components/Doi-Token/Doi_token_SubSec";
 import Exclusive_Benefits from "../components/Doi-Token/Exclusive_Benefits";
 import Doi_Ecosystem from "../components/Doi-Token/Doi_Ecosystem";
-import Gold_Member from "../components/Doi-Token/Gold_Member";
+import Gold_Member from "../components/ui/Gold_Member";
 export function meta() {
   return [
     { title: "DOI Token" },
@@ -151,6 +151,15 @@ export default function DoiToken() {
     },
   ];
 
+
+
+
+  const handleClickDoiToken = () => {
+    // Implement the button click functionality here
+    console.log("Get Started button clicked!");
+  }
+
+
   return (
     <div>
       <Hero
@@ -185,7 +194,8 @@ export default function DoiToken() {
           </h2>
         }
         paragraph={"Owning a DOI Token gives you instant access to valuable perks"}
-      />
+     image={"/images/doi-token/home-3.png"}
+     />
       <Doi_Ecosystem
       title ={  <h2 className="text-3xl lg:text-5xl leading-[56px] text-center font-nasa  text-default-800">
            Building the <span className="text-[#04B9E8]  font-nasa">Doi Ecosystem</span>
@@ -219,7 +229,16 @@ export default function DoiToken() {
         sweepstakesCountData={sweepstakesCountData}
       />
 
-      <Gold_Member />
+      <Gold_Member
+      
+           title={"Are you want to become a"}
+        GoldTitle={"Gold Member?"}
+        paragraph1={false}
+        paragraph2={false}
+        ButtonText={"Get  Started"}
+        ButtonFunction={() => handleClickDoiToken()}
+      
+      />
 
       <Doi_token_SubSec
         title={

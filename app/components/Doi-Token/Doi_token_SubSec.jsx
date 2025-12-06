@@ -2,7 +2,7 @@ import {Card, CardFooter, Button , Avatar, AvatarGroup, Image, CardBody} from '@
 
 const Discover_Doi_token = ({title , sweepstakesCountData , paragraph , SubCards , review , ListItems , FAQ , FaqItems , ImageItems1 , ImageItems2 }) => {
   return (
-   <div className={`max-w-7xl mx-auto px-4  sm:px-6 mt-[150px] lg:px-8 flex justify-center ${!SubCards ? "gap-[150px]" : "gap-[24px]"} `} >
+   <div className={`max-w-7xl mx-auto px-4  sm:px-6 py-16 lg:px-8 flex justify-center ${!SubCards ? "gap-[150px]" : "gap-[24px]"} `} >
          
           <div className="flex flex-col gap-[10px] min-w-[464px]" >
            {!SubCards && review && !FAQ && (

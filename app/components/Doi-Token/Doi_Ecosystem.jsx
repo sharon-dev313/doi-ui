@@ -2,7 +2,7 @@
 
 const Doi_Ecosystem = ({title , paragraph , image , customers , text}) => {
   return (
-   <div className="max-w-7xl  mx-auto px-4  sm:px-6 mt-[150px] lg:px-8 flex flex-col items-center gap-[24px] ">
+   <div className="max-w-7xl  mx-auto px-4  sm:px-6 py-16 lg:px-8 flex flex-col items-center gap-[24px] ">
     <div className="w-full flex items-center flex-col" >
        {title}
               <p className="text-lg text-default-600 text-center w-lg mt-4 ">
