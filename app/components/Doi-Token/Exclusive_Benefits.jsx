@@ -1,50 +1,14 @@
 
 import {Card, CardHeader,  CardFooter} from "@heroui/react";
-const Exclusive_Benefits = () => {
+const Exclusive_Benefits = ({data , title , paragraph}) => {
   
-const getIcon = (icon) => {
-  switch (icon) {
-    case "Building":
-      return <img className="w-[48px] h-[48px]" src="/images/doi-token/icons/building-03.svg" alt="icon" />;
 
-    case "Sweet":
-      return <img className="w-[48px] h-[48px]" src="/images/doi-token/icons/gift.svg" alt="icon" />;
-
-    case "Card":
-      return <img className="w-[48px] h-[48px]" src="/images/doi-token/icons/credit-card-pos.svg" alt="icon" />;
-
-    default:
-      return null;
-  }
-};
-  const data = [
-    {
-      id : 1,
-      title : "Property Discounts",
-      paragraph : "Get 20% off on all DOI properties whenyou purchase tokens",
-      icon : getIcon("Building")
-    },
-    {
-      id : 2,
-      title : "Sweepstakes Entry",
-      paragraph : "Each token gives you a chance to win incredible prizes",
-      icon : getIcon("Sweet")
-    },
-    {
-      id : 3,
-      title : "Monthly Payouts",
-      paragraph : "Potential for monthly payouts that could change your life",
-      icon : getIcon("Card")
-    },
-  ]
   return (
   <div className="max-w-7xl  mx-auto px-4  sm:px-6 mt-[150px] lg:px-8 flex flex-col items-center gap-[24px] ">
     <div className="w-full flex items-center flex-col" >
-        <h2 className="text-3xl lg:text-5xl leading-[56px]  text-center font-nasa  text-default-800">
-                Exclusive  <span className="text-[#04B9E8] font-nasa">Benefits</span>
-              </h2>
+       {title}
               <p className="text-lg text-default-600 text-center ">
-Owning a DOI Token gives you instant access to valuable perks              </p>
+{paragraph}            </p>
     </div>
     <div className="mt-[50px] w-full flex justify-between gap-[48px] "  >
           <div className="w-full h-[741px]  overflow-hidden" >
