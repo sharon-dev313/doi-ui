@@ -1,6 +1,6 @@
 import React , {useRef, useState} from 'react'
 
-const Video = () => {
+const Video = ({thumbnail, play_icon , video_url}) => {
      const [playing, setPlaying] = useState(false);
   const videoRef = useRef(null);
 
@@ -19,7 +19,7 @@ const Video = () => {
       {!playing && (
         <>
           <img
-       src="/images/doi_gold_members/house_5.png"
+       src={thumbnail}
             className="h-full w-auto object-center"
             alt="video image"
           />
@@ -28,7 +28,7 @@ const Video = () => {
             className="absolute text-white text-4xl z-10"
           >
             <img
-              src="/images/doi_gold_members/icons/play-circle-02.svg"
+              src={play_icon}
               alt="video Play Icon"
             />
           </button>
@@ -42,7 +42,7 @@ const Video = () => {
           className="w-full  overflow-hidden object-center"
           controls
         >
-          <source src="https://www.pexels.com/download/video/2887459/" type="video/mp4" />
+          <source src={video_url} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
       )}

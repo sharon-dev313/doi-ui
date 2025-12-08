@@ -1,7 +1,7 @@
 
 const Card_List = ({icon , title , paragraph }) => {
   return (
-      <div className="bg-[--var(darkgray-100)] p-8 rounded-4xl text-white flex flex-col items-start gap-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
+      <div className="bg-darkgray p-8 rounded-4xl text-white flex flex-col items-start gap-4 shadow-lg hover:shadow-xl transition-shadow duration-300">
                         <div className="mb-2">
                             
                         <img src={icon} alt = {title} />

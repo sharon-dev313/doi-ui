@@ -204,13 +204,24 @@ image2={"/images/doi_gold_members/house_2.png"}
       
      />
 {/* Section 3 End */}
-      <Video />
+      <Video 
+      
+      thumbnail = {"/images/doi_gold_members/house_5.png"}
+    play_icon = {"/images/doi_gold_members/icons/play-circle-02.svg"}
+    video_url = {"https://www.pexels.com/download/video/2887459/"}
+      
+      
+      />
       <Exclusive_Benefits
         data={Exclusive_Benefits_data}
         title={false}
         paragraph={false}
           DoiGoldMember = {true}
         image={"/images/doi_gold_members/house_7.png"}
+        DoiGoldMember_title={<span>The Membership That
+                            Will <span className="textdoiorange">Change Your Life</span>
+                        </span>}
+       DoiGoldMember_paragraph={" Unlock exclusive benefits, rewards, and opportunities designed for your success."}               
       />
       <GoldMember
         title="Are you want to become a"
