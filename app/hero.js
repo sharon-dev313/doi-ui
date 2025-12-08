@@ -56,7 +56,15 @@ export default heroui({
             "50": "#ecfdf5",
             "500": "#10b981",
             "600": "#059669"
-          }
+          },
+          darkgray: {    
+            "DEFAULT": "#111314", 
+            "100": "#151105",
+          },
+          doiorange: {    
+            "DEFAULT": "#D4AF37", 
+            "100": "#b8962e",
+          },
         }
       },
       dark: {
