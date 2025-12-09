@@ -106,66 +106,82 @@ const Sweepstakes = () => {
 
   const cardsData = [
     {
-        id: 1,
-        type: 'info',
-        icon: <img src="/images/seepstakes/icons/2.svg" alt="Calendar" className="w-6 h-auto" /> ,
-        title: "Started",
-        subTitle: "Wave launch date",
-        mainContent: "September 17, 2025",
-        variant: "default"
+      id: 1,
+      type: "info",
+      icon: (
+        <img
+          src="/images/seepstakes/icons/2.svg"
+          alt="Calendar"
+          className="w-6 h-auto"
+        />
+      ),
+      title: "Started",
+      subTitle: "Wave launch date",
+      mainContent: "September 17, 2025",
+      variant: "default",
     },
     {
-        id: 2,
-        type: 'stat',
-        statText: "$25,700 Total Prizes Awarded",
-        statIcon: <div className="w-3 h-3 rounded-full bg-doiblue"></div>,
-        variant: "default"
+      id: 2,
+      type: "stat",
+      statText: "$25,700 Total Prizes Awarded",
+      statIcon: <div className="w-3 h-3 rounded-full bg-doiblue"></div>,
+      variant: "default",
     },
     {
-        id: 3,
-        type: 'stat',
-        statText: "500+ Reviews",
-        avatars: [
-            "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-            "https://i.pravatar.cc/150?u=a04258a2462d826712d",
-            "https://i.pravatar.cc/150?u=a042581f4e29026704d",
-            "https://i.pravatar.cc/150?u=a04258114e29026302d",
-        ],
-        variant: "default"
+      id: 3,
+      type: "stat",
+      statText: "500+ Reviews",
+      avatars: [
+        "https://i.pravatar.cc/150?u=a042581f4e29026024d",
+        "https://i.pravatar.cc/150?u=a04258a2462d826712d",
+        "https://i.pravatar.cc/150?u=a042581f4e29026704d",
+        "https://i.pravatar.cc/150?u=a04258114e29026302d",
+      ],
+      variant: "default",
     },
     {
-        id: 4,
-        type: 'info',
-        icon: <img src="/images/seepstakes/icons/3.svg" alt="Prize" className="w-6 h-auto" />,
-        title: "Prize",
-        mainContent: "$4,000",
-        subContent: "One-time payout",
-        variant: "default"
+      id: 4,
+      type: "info",
+      icon: (
+        <img
+          src="/images/seepstakes/icons/3.svg"
+          alt="Prize"
+          className="w-6 h-auto"
+        />
+      ),
+      title: "Prize",
+      mainContent: "$4,000",
+      subContent: "One-time payout",
+      variant: "default",
     },
     {
-        id: 5,
-        type: 'info',
-        icon: <img src="/images/seepstakes/icons/4.svg" alt="Participation" className="w-6 h-auto" />,
-        title: "Participation",
-        subTitle: "4,200/6,000 entries",
-        progressData: {
-            label: "Progress",
-            current: 21,
-            total: 21,
-            status: "Wave is full",
-            userEntries: 0,
+      id: 5,
+      type: "info",
+      icon: (
+        <img
+          src="/images/seepstakes/icons/4.svg"
+          alt="Participation"
+          className="w-6 h-auto"
+        />
+      ),
+      title: "Participation",
+      subTitle: "4,200/6,000 entries",
+      progressData: {
+        label: "Progress",
+        current: 21,
+        total: 21,
+        status: "Wave is full",
+        userEntries: 0,
+      },
+      variant: "blue",
+    },
+  ];
 
-        },
-        variant: "blue"
-    }
-];
-
-   const startedCard = cardsData[0];
-    const totalPrizesCard = cardsData[1];
-    const reviewsCard = cardsData[2];
-    const prizeCard = cardsData[3];
-    const participationCard = cardsData[4];
-
+  const startedCard = cardsData[0];
+  const totalPrizesCard = cardsData[1];
+  const reviewsCard = cardsData[2];
+  const prizeCard = cardsData[3];
+  const participationCard = cardsData[4];
 
   return (
     <div>
@@ -202,32 +218,41 @@ const Sweepstakes = () => {
           btnFunction={() => {}}
         />
 
-    <section className="w-full  mx-auto flex flex-col py-8">
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-
-                {/* Column 1 */}
-                <div className="flex flex-col gap-6">
-                    <InfoCard {...startedCard} className="grow" />
-                    <StatCard {...totalPrizesCard} className="h-24 shrink-0" />
-                </div>
-
-                {/* Column 2 */}
-                <div className="flex flex-col gap-6">
-                    <StatCard {...reviewsCard} className="h-24 shrink-0" />
-                    <InfoCard {...prizeCard} className="grow" />
-                </div>
-
-                {/* Column 3 */}
-                <div className="flex flex-col h-full">
-                    <InfoCard {...participationCard} className="h-full min-h-[400px]" />
-                </div>
+        <section className="w-full  mx-auto flex flex-col py-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {/* Column 1 */}
+            <div className="flex flex-col gap-6">
+              <InfoCard {...startedCard} className="grow" />
+              <StatCard {...totalPrizesCard} className="h-24 shrink-0" />
             </div>
 
-            <div className="mt-8 me-auto text-center text-default-800 text-md">
-                <p>
-                    No purchase necessary , subject to official rules See <Link href="#" className="text-cyan-500 hover:underline font-medium text-sm!">terms & disclaimers</Link> for full details.
-                </p>
+            {/* Column 2 */}
+            <div className="flex flex-col gap-6">
+              <StatCard {...reviewsCard} className="h-24 shrink-0" />
+              <InfoCard {...prizeCard} className="grow" />
             </div>
+
+            {/* Column 3 */}
+            <div className="flex flex-col h-full">
+              <InfoCard
+                {...participationCard}
+                className="h-full min-h-[400px]"
+              />
+            </div>
+          </div>
+
+          <div className="mt-8 me-auto text-center text-default-800 text-md">
+            <p>
+              No purchase necessary , subject to official rules See{" "}
+              <Link
+                href="#"
+                className="text-cyan-500 hover:underline font-medium text-sm!"
+              >
+                terms & disclaimers
+              </Link>{" "}
+              for full details.
+            </p>
+          </div>
         </section>
       </div>
       <Guarantee
