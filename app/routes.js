@@ -8,5 +8,6 @@ export default [
         route("how-It-works", "routes/how-It-works.jsx"),
         route("investment-finder", "routes/investment-finder.jsx"),
          route("investment-finder/:id", "routes/investment-finder-details.jsx"),
+         route("sweepstakes", "routes/Sweepstakes.jsx"),
     ]),    
 ];

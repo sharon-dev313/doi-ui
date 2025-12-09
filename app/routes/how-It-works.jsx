@@ -81,7 +81,9 @@ const how_It_works = () => {
           paragraph={
             "With DOI, your money doesn’t just sit—it works harder through secure real estate investments and consistent monthly returns."
           }
-          how_It_works={true}
+          btn={"Get Started"}
+          btnFunction = {()=>{}}
+          
         />
         <MoneyWorksSmater
           image1={"/images/how_it_works/house_1.png"}
@@ -102,7 +104,18 @@ const how_It_works = () => {
         paragraph={
           "We back your USDT investments with the DOI operational properties that are fully owned and managed by Digital Oro International with no debt or mortgages on them, making DOI investment fund super secure."
         }
+        button = {`Invest Now`}
+        buttonFunction={() => {}}
         image={"/images/how_it_works/house_3.png"}
+        imageHeading = {`Example`}
+        imageParagraph = {<span> DOI <span className="text-doiblue">El hotel</span> in PDC is
+                  worth on market value at{" "}
+                  <span className="text-doiblue">1.5 M USD</span> dollars, DOI
+                  can only take up to{" "}
+                  <span className="text-doiblue">1.4 M dollars</span> from its
+                  GOLD members with this property in collateral. Your money is
+                  protected by the existing assets. As the ecosystem grows on
+                  assets, we can take on more money from our members.</span>}
         icon={"/images/how_it_works/icons/5.svg"}
       />
 

@@ -7,7 +7,7 @@ import {
   Image,
   CardBody,
 } from "@heroui/react";
-
+import SubCard from "../ui/SubCard";
 const Discover_Doi_token = ({
   title,
   sweepstakesCountData,
@@ -166,17 +166,7 @@ const Discover_Doi_token = ({
       {!SubCards && !FAQ && (
         <div className="flex w-[580px] flex-col mt-8 border gap-[76px] rounded-3xl bg-[#e6f8fd] p-8">
           {ListItems.map((item, index) => (
-            <div key={index} className="flex   gap-[15px]">
-              <div className="w-[70px] h-[70px] rounded-full flex justify-center items-center overflow-hidden bg-white">
-                {item.icon}
-              </div>
-              <div className="flex flex-col w-[407px] gap-2 ">
-                <h3 className="text-xl  font-nasa text-default-800">
-                  {item.Title}
-                </h3>
-                <p className="text-default-600">{item.paragraph}</p>
-              </div>
-            </div>
+            <SubCard key={index} data = {item} />
           ))}
         </div>
       )}

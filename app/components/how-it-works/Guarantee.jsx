@@ -1,6 +1,6 @@
 import { Button } from "@heroui/react";
 
-const Guarantee = ({ title, paragraph, image, icon }) => {
+const Guarantee = ({ title, paragraph, image, icon , icon2 , subParagraph , imageHeading, imageParagraph,  button, buttonFunction }) => {
   return (
     <section className="w-7xl mx-auto  py-16 ">
       <div className="bg-primary/25 px-4 py-8 md:px-8 lg:px-16 rounded-4xl overflow-hidden">
@@ -10,16 +10,23 @@ const Guarantee = ({ title, paragraph, image, icon }) => {
             <h2 className="text-5xl md:text-5xl  text-black leading-tight">
               {title}
             </h2>
-            <p className="text-default-600 text-xl leading-8 max-w-lg">
+            <p className="text-default-700 text-xl leading-8 max-w-lg">
               {paragraph}
             </p>
+            {
+              subParagraph && (<p className="text-default-500 text-xl leading-8 mt-8">
+              {subParagraph}
+            </p>
+              )
+            }
             <div className="pt-4">
               <Button
                 className="bg-doiblue font-nasa text-black font-medium px-8 py-6 rounded-full text-lg hover:bg-doiblue/90 transition-colors"
                 radius="full"
                 size="lg"
+                onClick={buttonFunction}
               >
-                Invest Now
+                {button}
               </Button>
             </div>
           </div>
@@ -33,11 +40,12 @@ const Guarantee = ({ title, paragraph, image, icon }) => {
                   src={image}
                   alt="DOI operational property"
                   fill
-                  className="w-full h-auto object-cover"
+                  className="w-auto h-full object-cover"
                 />
               </div>
               <div className="mt-10 flex flex-col">
                 <h1 className="text-2xl flex gap-3.5 items-center font-mono">
+                 {icon && (
                   <span>
                     {" "}
                     <img
@@ -46,20 +54,22 @@ const Guarantee = ({ title, paragraph, image, icon }) => {
                       fill
                       className="w-8 h-auto object-cover"
                     />
-                  </span>{" "}
-                  Example
+                  </span>
+                  )}
+                  {" "}
+                  {imageHeading}
                 </h1>
 
-                <p className="text-default-600 mt-6 text-sm leading-8">
-                  DOI <span className="text-doiblue">El hotel</span> in PDC is
-                  worth on market value at{" "}
-                  <span className="text-doiblue">1.5 M USD</span> dollars, DOI
-                  can only take up to{" "}
-                  <span className="text-doiblue">1.4 M dollars</span> from its
-                  GOLD members with this property in collateral. Your money is
-                  protected by the existing assets. As the ecosystem grows on
-                  assets, we can take on more money from our members.
-                </p>
+                <p className={`text-default-900 ${icon2 && !icon ? "mt-0" : "mt-6" }  flex gap-3.5 items-center text-sm leading-8`}>
+                   {icon2 && (
+                     <img
+                      src={icon2}
+                      alt="DOI operational property"
+                      fill
+                      className="w-8 h-auto object-cover"
+                    />
+                    )}
+                {imageParagraph} </p>
               </div>
             </div>
           </div>

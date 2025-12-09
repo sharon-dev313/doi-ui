@@ -7,6 +7,7 @@ const Gold_Member = ({
   paragraph2,
   ButtonText,
   ButtonFunction,
+  Seepstakes,
 }) => {
   return (
     <div className="max-w-7xl  mx-auto px-4 overflow-hidden relative bg-black my-16 rounded-4xl sm:px-6 py-20 flex flex-col justify-center items-center ">
@@ -22,7 +23,7 @@ const Gold_Member = ({
       ></div>
       <h1 className="text-5xl text-white relative z-10 text-center">
         {title}
-        <br />{" "}
+       {!Seepstakes && (<br />) } {" "}
         <span className={`${GoldTitle ? "text-gold" : "text-doiblue"}`}>
           {GoldTitle ? GoldTitle : BlueTitle}
         </span>
