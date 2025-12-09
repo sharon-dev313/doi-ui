@@ -33,7 +33,7 @@ const Discover_Doi_token = ({
               <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
               <Avatar src="https://i.pravatar.cc/150?u=a04258114e29026302d" />
             </AvatarGroup>
-            <span className="text-[#04B9E8]">{review}</span>
+            <span className="text-doiblue">{review}</span>
           </div>
         )}
         {title}
@@ -44,7 +44,7 @@ const Discover_Doi_token = ({
             variant="solid"
             radius="full"
             size="lg"
-            className="font-nasa w-[212px] mt-10 bg-[#04B9E8] text-black"
+            className="font-nasa w-[212px] mt-10 bg-doiblue text-black"
           >
             Buy Tokens
           </Button>

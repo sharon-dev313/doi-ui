@@ -16,8 +16,9 @@ export default heroui({
           secondary: {    
             "DEFAULT": "#fa5551"
           },
-          doiBlue: { 
-            "DEFAULT": "#04B9E8"
+          doiblue: { 
+            "DEFAULT": "#04B9E8",
+            "100" : "#04B9E8",
           },
           doiRed: {    
             "DEFAULT": "#DC353B"
@@ -31,8 +32,9 @@ export default heroui({
           doiDark: {    
             "DEFAULT": "#0B0F1E"
           },
-          doiLight: {    
-            "DEFAULT": "#FEFEFA"
+          doilight: {    
+            "DEFAULT": "#FEFEFA",
+            "100": "#F0E9DF",
           },
           main: {    
             "DEFAULT": "#0B0F1E"
@@ -51,6 +53,9 @@ export default heroui({
             "800": "#92400e",
             "900": "#78350f"
           },
+          gray:{
+            "DEFAULT": "#f3f3f4",
+          },
           success: {
             "DEFAULT": "#10b981",
             "50": "#ecfdf5",
@@ -65,8 +70,18 @@ export default heroui({
             "DEFAULT": "#D4AF37", 
             "100": "#b8962e",
           },
-        }
-      },
+          lightblue:{
+            "DEFAULT": "#04B9E7",
+            "100": "#E2E6F4",
+            
+          },
+          lightgraycard:{
+            "DEFAULT": "#F6F5FA",
+            "100": "#F5F7F9",
+            "200": "#dadbdd",
+          },
+        } // close colors
+      }, // close light
       dark: {
         colors: {
           primary: { 

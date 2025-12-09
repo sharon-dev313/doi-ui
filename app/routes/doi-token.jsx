@@ -261,7 +261,7 @@ export default function DoiToken() {
         FaqItems={FaqItemsData}
       />
 
-      <div className="w-full py-[100px]"></div>
+      
     </div>
   );
 }
