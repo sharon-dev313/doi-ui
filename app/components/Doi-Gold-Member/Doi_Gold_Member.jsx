@@ -27,7 +27,6 @@ const Doi_Gold_Member = ({
               {invest_text}
             </p>
           </div>
-
           <Doi_Gold_Member_Image image={image1} />
         </div>
 

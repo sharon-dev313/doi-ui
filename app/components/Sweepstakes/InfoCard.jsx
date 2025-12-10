@@ -24,7 +24,6 @@ const InfoCard = ({
           )}
         </div>
       </CardHeader>
-
       <CardBody className="p-6 pt-6 flex flex-col justify-center overflow-visible z-10">
         {mainContent && (
           <div className="mb-2">
@@ -57,7 +56,6 @@ const InfoCard = ({
                 value: "text-gray-500 text-md",
               }}
             />
-
             <div className="text-center relative z-0">
               <p className="text-default-800 font-medium">
                 {progressData.status}

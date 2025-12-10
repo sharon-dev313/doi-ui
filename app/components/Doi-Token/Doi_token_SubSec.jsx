@@ -97,7 +97,6 @@ const Discover_Doi_token = ({
             </Card>
 
             {/* Second Card  */}
-
             <Card
               className={
                 "!w-full bg-[#E6F8FD] shadow-none h-[244px] border-none"
@@ -119,7 +118,6 @@ const Discover_Doi_token = ({
             <p className="text-default-600">
               Don’t worry we’re free for consultation, just click button below.
             </p>
-
             <Button
               variant="solid"
               color="primary"
@@ -134,7 +132,6 @@ const Discover_Doi_token = ({
       </div>
 
       {/* Second Column  */}
-
       {SubCards && !FAQ && (
         <div className="flex gap-[24px] ">
           <Card
@@ -166,23 +163,21 @@ const Discover_Doi_token = ({
       {!SubCards && !FAQ && (
         <div className="flex w-[580px] flex-col mt-8 border gap-[76px] rounded-3xl bg-[#e6f8fd] p-8">
           {ListItems.map((item, index) => (
-            <SubCard key={index} data = {item} />
+            <SubCard key={index} data={item} />
           ))}
         </div>
       )}
-
       {FAQ && (
         <div className="flex w-[580px] flex-col  gap-[24px] rounded-3xl  p-8">
           {FaqItems.map((item, index) => (
             <div
               key={index}
               className={`flex flex-col gap-[15px] pb-4
-      ${index !== FaqItems.length - 1 ? "border-b border-default-200" : ""}`}
+              ${index !== FaqItems.length - 1 ? "border-b border-default-200" : ""}`}
             >
               <h3 className="text-2xl font-nasa leading-[34px] font-nasa text-default-800">
                 {item.Question}
               </h3>
-
               <p className="text-default-600">{item.Answer}</p>
             </div>
           ))}

@@ -14,9 +14,10 @@ const Guarantee = ({ title, paragraph, image, icon , icon2 , subParagraph , imag
               {paragraph}
             </p>
             {
-              subParagraph && (<p className="text-default-500 text-xl leading-8 mt-8">
+              subParagraph && (
+              <p className="text-default-500 text-xl leading-8 mt-8">
               {subParagraph}
-            </p>
+              </p>
               )
             }
             <div className="pt-4">
@@ -59,7 +60,6 @@ const Guarantee = ({ title, paragraph, image, icon , icon2 , subParagraph , imag
                   {" "}
                   {imageHeading}
                 </h1>
-
                 <p className={`text-default-900 ${icon2 && !icon ? "mt-0" : "mt-6" }  flex gap-3.5 items-center text-sm leading-8`}>
                    {icon2 && (
                      <img
@@ -67,9 +67,10 @@ const Guarantee = ({ title, paragraph, image, icon , icon2 , subParagraph , imag
                       alt="DOI operational property"
                       fill
                       className="w-8 h-auto object-cover"
-                    />
+                      />
                     )}
-                {imageParagraph} </p>
+                  {imageParagraph} 
+                </p>
               </div>
             </div>
           </div>
