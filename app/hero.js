@@ -80,6 +80,9 @@ export default heroui({
             "100": "#F5F7F9",
             "200": "#dadbdd",
           },
+          lime:{
+            "DEFAULT" : "#94C73F"
+          }
         } // close colors
       }, // close light
       dark: {

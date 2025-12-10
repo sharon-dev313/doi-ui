@@ -9,5 +9,6 @@ export default [
         route("investment-finder", "routes/investment-finder.jsx"),
          route("investment-finder/:id", "routes/investment-finder-details.jsx"),
          route("sweepstakes", "routes/Sweepstakes.jsx"),
+         route("sweepstakes-past-winner", "routes/Seepstakes-Past-Winner.jsx"),
     ]),    
 ];

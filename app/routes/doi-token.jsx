@@ -41,7 +41,7 @@ export default function DoiToken() {
       case "Building":
         return (
           <img
-            className="w-[48px] h-[48px]"
+            className="w-12 h-12"
             src="/images/doi-token/icons/building-03.svg"
             alt="icon"
           />
@@ -49,7 +49,7 @@ export default function DoiToken() {
       case "Sweet":
         return (
           <img
-            className="w-[48px] h-[48px]"
+            className="w-12 h-12"
             src="/images/doi-token/icons/gift.svg"
             alt="icon"
           />
@@ -57,7 +57,7 @@ export default function DoiToken() {
       case "Card":
         return (
           <img
-            className="w-[48px] h-[48px]"
+            className="w-12 h-12"
             src="/images/doi-token/icons/credit-card-pos.svg"
             alt="icon"
           />
@@ -189,16 +189,16 @@ export default function DoiToken() {
       <Exclusive_Benefits
         data={Exclusive_Benefits_data}
         title={
-          <h2 className="text-3xl lg:text-5xl leading-[56px]  text-center font-nasa  text-default-800">
-            Exclusive <span className="text-[#04B9E8] font-nasa">Benefits</span>
+          <h2 className="text-3xl lg:text-5xl leading-14  text-center font-nasa  text-default-800">
+            Exclusive <span className="text-doiblue font-nasa">Benefits</span>
           </h2>
         }
         paragraph={"Owning a DOI Token gives you instant access to valuable perks"}
      image={"/images/doi-token/home-3.png"}
      />
       <Doi_Ecosystem
-      title ={  <h2 className="text-3xl lg:text-5xl leading-[56px] text-center font-nasa  text-default-800">
-           Building the <span className="text-[#04B9E8]  font-nasa">Doi Ecosystem</span>
+      title ={  <h2 className="text-3xl lg:text-5xl leading-14 text-center font-nasa  text-default-800">
+           Building the <span className="text-doiblue  font-nasa">Doi Ecosystem</span>
               </h2>} 
       paragraph={"we’re going global-Our high-quality homes are fast to build. The community is growing repilot. Here’s out roadmap."}
       image ={"/images/doi-token/map.png"}
@@ -209,7 +209,7 @@ export default function DoiToken() {
 
       <Doi_token_SubSec
         title={
-          <h2 className="text-3xl lg:text-5xl leading-[56px] font-nasa  text-default-800">
+          <h2 className="text-3xl lg:text-5xl leading-14 font-nasa  text-default-800">
             Enter our exclusive{" "}
             <span className="text-[#04B9E8] font-nasa">sweepstakes</span>
           </h2>
@@ -242,7 +242,7 @@ export default function DoiToken() {
 
       <Doi_token_SubSec
         title={
-          <h2 className="text-3xl lg:text-5xl font-nasa leading-[56px] text-default-800">
+          <h2 className="text-3xl lg:text-5xl font-nasa leading-14 text-default-800">
             FREQUENTLY <br />
             <span className="text-[#04B9E8] font-nasa">ASKED QUESTIONS</span>
           </h2>

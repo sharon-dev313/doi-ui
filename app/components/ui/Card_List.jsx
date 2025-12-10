@@ -1,10 +1,10 @@
 import { Card, CardHeader, CardFooter } from "@heroui/react";
 
-const Card_List = ({ val }) => {
+const Card_List = ({ val  }) => {
   return (
     <Card
       key={val?.id}
-      className="max-w-full bg-[#F2F2F2] shadow-none p-[24px] h-[231px] rounded-4xl border-none"
+      className="max-w-full bg-[#F2F2F2] shadow-none p-6 h-[231px] rounded-4xl border-none"
     >
       <CardHeader className="justify-between">
         <div className="flex gap-5">{val.icon}</div>
