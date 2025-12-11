@@ -1,6 +1,6 @@
 const StatCard = ({ value, label, icon, right }) => {
   return (
-    <div className="bg-lightblue/10 rounded-3xl p-8 flex items-center gap-6 transition-transform hover:scale-[1.02] duration-300 flex-1">
+    <div className="bg-lightblue/10 rounded-3xl p-8 flex items-center gap-6  flex-1">
       <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center shadow-sm text-doiblue shrink-0">
         {icon}
       </div>

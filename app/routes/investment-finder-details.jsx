@@ -52,32 +52,30 @@ const investmentFinderDetails = () => {
     },
   ];
 
-
   const PROPERTY_DATA = {
     id: "doi-townhouse",
     name: "DOI Townhouse",
     location: "Tulum",
     description: [
-        "Welcome to DOI Townhouse, a stunning 3-bedroom luxury home located in the serene surroundings of Tulum. Surrounded by beautiful cenotes and lush nature, this brand-new property offers an ideal escape just 10 minutes from Tulum's vibrant center and its world-famous beaches.",
-        "With elegant architecture, spacious interiors, and high-end finishes, DOI Townhouse provides a perfect balance of style and comfort. Its open design brings in natural light and fresh jungle breezes, creating a warm and inviting atmosphere for families or groups of friends. Whether you're relaxing in the living area, exploring nearby cenotes, or spending a day at the beach, this townhouse offers the perfect base for your Tulum experience."
+      "Welcome to DOI Townhouse, a stunning 3-bedroom luxury home located in the serene surroundings of Tulum. Surrounded by beautiful cenotes and lush nature, this brand-new property offers an ideal escape just 10 minutes from Tulum's vibrant center and its world-famous beaches.",
+      "With elegant architecture, spacious interiors, and high-end finishes, DOI Townhouse provides a perfect balance of style and comfort. Its open design brings in natural light and fresh jungle breezes, creating a warm and inviting atmosphere for families or groups of friends. Whether you're relaxing in the living area, exploring nearby cenotes, or spending a day at the beach, this townhouse offers the perfect base for your Tulum experience.",
     ],
     investment: {
-        description: "This property offers a 12% APY return over a 30 days lock period. The minimum investment is $100.",
-        totalValue: 399000,
-        apy: 12,
-        minInvestment: 100,
-        lockPeriodDays: 30,
-        currentRaised: 132100,
-        currency: "USDT"
+      description:
+        "This property offers a 12% APY return over a 30 days lock period. The minimum investment is $100.",
+      totalValue: 399000,
+      apy: 12,
+      minInvestment: 100,
+      lockPeriodDays: 30,
+      currentRaised: 132100,
+      currency: "USDT",
     },
     mapLocation: {
-        lat: 20.21,
-        lng: -87.46,
-        price: 399000
-    }
-};
-
-
+      lat: 20.21,
+      lng: -87.46,
+      price: 399000,
+    },
+  };
 
   return (
     <div className="py-32 w-7xl mx-auto  flex flex-col items-start justify-center">
@@ -120,13 +118,13 @@ const investmentFinderDetails = () => {
                 src="/images/investment-details/icons/8.svg"
                 alt="Investments Details"
               />
-               Tulum
+              Tulum
             </BreadcrumbItem>
             <BreadcrumbItem key="music" isCurrent={"music"}>
-             <img
+              <img
                 src="/images/investment-details/icons/7.svg"
                 alt="Investments Details"
-              /> 
+              />
               Residential
             </BreadcrumbItem>
             <BreadcrumbItem key="ACTIVE" isCurrent={true}>
@@ -165,16 +163,16 @@ const investmentFinderDetails = () => {
         Features_Amenities_Data={Features_Amenities_Data}
       />
 
-       <div className="min-h-screen bg-white font-sans ">
-            <div className=" mx-auto flex gap-8 ">
-                <div className="w-full ">
-                    <PropertyDetails data={PROPERTY_DATA} />
-                </div>
-                <div className="w-[80%]">
-                    <InvestmentDetails data={PROPERTY_DATA} />
-                </div>
-            </div>
+      <div className="min-h-screen bg-white font-sans ">
+        <div className=" mx-auto flex gap-8 ">
+          <div className="w-full ">
+            <PropertyDetails data={PROPERTY_DATA} />
+          </div>
+          <div className="w-4/5">
+            <InvestmentDetails data={PROPERTY_DATA} />
+          </div>
         </div>
+      </div>
     </div>
   );
 };

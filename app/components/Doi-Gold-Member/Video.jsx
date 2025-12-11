@@ -12,7 +12,7 @@ const Video = ({ thumbnail, play_icon, video_url }) => {
   };
 
   return (
-    <div className="max-w-7xl max-h-[600px] relative mx-auto bg-gray-800 rounded-4xl text-white h-auto overflow-hidden my-16 flex justify-center items-center">
+    <div className="max-w-7xl max-h-[600px]  relative mx-auto bg-default-800 rounded-4xl text-white h-auto overflow-hidden my-16 flex justify-center items-center">
       {/* Show image when not playing */}
       {!playing && (
         <>
@@ -29,7 +29,6 @@ const Video = ({ thumbnail, play_icon, video_url }) => {
           </button>
         </>
       )}
-
       {/* Show video when playing */}
       {playing && (
         <video

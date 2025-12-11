@@ -1,6 +1,4 @@
-import React from 'react'
-import { FiDatabase, FiLayers } from 'react-icons/fi';
-import { IoShapesOutline } from 'react-icons/io5';
+
 const ItWorks = ({itWorksData}) => {
   return (
         <div className="w-full bg-white py-16 font-sans">
@@ -13,7 +11,7 @@ const ItWorks = ({itWorksData}) => {
                             {val.title}
                         </h2>
                         <div className="w-full h-px mt-auto bg-gray-200 mb-3"></div>
-                        <p className="text-default-600  text-base leading-8 flex-grow">
+                        <p className="text-default-600  text-base leading-8 grow">
                             {val.description}.
                         </p>
                         <div className="flex items-end justify-between mt-4">

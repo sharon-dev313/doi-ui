@@ -1,4 +1,3 @@
-import React from "react";
 import { Card, CardBody, AvatarGroup, Avatar } from "@heroui/react";
 const StatCard = ({ statText, statIcon, avatars, className }) => {
   return (

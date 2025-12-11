@@ -22,11 +22,11 @@ const Discover_Doi_token = ({
 }) => {
   return (
     <div
-      className={`max-w-7xl mx-auto px-4  sm:px-6 py-16 lg:px-8 flex justify-center ${!SubCards ? "gap-[150px]" : "gap-[24px]"} `}
+      className={`max-w-7xl mx-auto px-4  sm:px-6 py-16 lg:px-8 flex justify-center ${!SubCards ? "gap-36" : "gap-5"} `}
     >
-      <div className="flex flex-col gap-[10px] min-w-[464px]">
+      <div className="flex flex-col gap-2.5 min-w-xl">
         {!SubCards && review && !FAQ && (
-          <div className="flex items-center gap-[24px]">
+          <div className="flex items-center gap-6">
             <AvatarGroup isBordered max={4}>
               <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
               <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
@@ -77,17 +77,17 @@ const Discover_Doi_token = ({
             )}
           </>
         ) : SubCards && !FAQ ? (
-          <div className="flex gap-[24px] mt-auto">
+          <div className="flex gap-6 mt-auto">
             <Card
               className={
-                "!w-full bg-[#F3F5F9] h-[244px] shadow-none  !border-none"
+                "w-full bg-[#F3F5F9] h-[244px] shadow-none  border-none"
               }
               radius="lg"
             >
               <CardFooter className=" flex flex-col items-start overflow-hidden ps-6 py-6 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)]  ml-1 z-10">
                 <h1 className="text-black text-5xl">100+</h1>
                 <p> Active members</p>
-                <AvatarGroup isBordered max={4} className="mt-[16px]">
+                <AvatarGroup isBordered max={4} className="mt-4">
                   <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026024d" />
                   <Avatar src="https://i.pravatar.cc/150?u=a04258a2462d826712d" />
                   <Avatar src="https://i.pravatar.cc/150?u=a042581f4e29026704d" />
@@ -99,7 +99,7 @@ const Discover_Doi_token = ({
             {/* Second Card  */}
             <Card
               className={
-                "!w-full bg-[#E6F8FD] shadow-none h-[244px] border-none"
+                "w-full bg-[#E6F8FD] shadow-none h-[244px] border-none"
               }
               isFooterBlurred
               radius="lg"
@@ -133,7 +133,7 @@ const Discover_Doi_token = ({
 
       {/* Second Column  */}
       {SubCards && !FAQ && (
-        <div className="flex gap-[24px] ">
+        <div className="flex gap-6 ">
           <Card
             radius="lg"
             className="w-[424px] h-fit shadow-none border-none p-0"
@@ -168,7 +168,7 @@ const Discover_Doi_token = ({
         </div>
       )}
       {FAQ && (
-        <div className="flex w-[580px] flex-col  gap-[24px] rounded-3xl  p-8">
+        <div className="flex w-[580px] flex-col  gap-8 rounded-3xl  p-8">
           {FaqItems.map((item, index) => (
             <div
               key={index}

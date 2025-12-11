@@ -1,7 +1,3 @@
-import React from "react";
-// You may not need all these icons if they are passed in props, but keeping for completeness
-import { FiUser } from "react-icons/fi";
-// ... other imports
 import MoneyWorksCards from "./MoneyWorksCards";
 
 const MoneyWorksSmater = ({ image1, image2, row1, row2 }) => {
@@ -37,7 +33,7 @@ const MoneyWorksSmater = ({ image1, image2, row1, row2 }) => {
                 paragraph={item.paragraph}
               />
             ))}
-            <div className="relative w-full rounded-2xl overflow-hidden shadow-sm flex-grow">
+            <div className="relative w-full rounded-2xl overflow-hidden shadow-sm grow">
               <img
                 src={image2}
                 alt="Modern Luxury House"

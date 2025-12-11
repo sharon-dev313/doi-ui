@@ -1,7 +1,5 @@
-import React from "react";
 import { Card, CardBody, Button, Avatar } from "@heroui/react";
-import { FaCheckCircle, FaRegCalendarAlt, FaRegClock } from "react-icons/fa";
-import { RiMoneyDollarCircleLine } from "react-icons/ri";
+
 const WinnerCard = ({ data }) => {
   return (
     <Card className="w-full rounded-3xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow duration-300 bg-white">

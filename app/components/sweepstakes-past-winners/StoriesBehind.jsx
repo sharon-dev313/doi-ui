@@ -11,12 +11,10 @@ const StoriesBehind = ({ data, title, image, right }) => {
         className={`grid ${right && "py-12"} grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-12`}
       >
         {/* Left Column: Heading and Image */}
-
         {!right ? (
           <>
             <div className="lg:col-span-8 flex flex-col gap-6 h-full">
               {title}
-
               <div className="relative w-full h-[300px] md:h-[400px] lg:h-auto lg:flex-1 rounded-3xl overflow-hidden shadow-sm">
                 <img
                   src={image}
@@ -27,7 +25,6 @@ const StoriesBehind = ({ data, title, image, right }) => {
                 />
               </div>
             </div>
-
             {/* Right Column: Stats Cards */}
             <div className="lg:col-span-4 flex flex-col gap-6 h-full">
               {data.map((stat) => (
@@ -43,9 +40,9 @@ const StoriesBehind = ({ data, title, image, right }) => {
                 <StatCard right={right} key={stat.id} {...stat} />
               ))}
             </div>
+            {/* Left Column:  Image */}
             <div className="lg:col-span-6 flex flex-col gap-6 h-full">
               {!right && title}
-
               <div className="relative w-full h-full md:h-full lg:h-auto lg:flex-1 rounded-3xl overflow-hidden shadow-sm">
                 <img
                   src={image}

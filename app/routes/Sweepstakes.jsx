@@ -246,7 +246,7 @@ const Sweepstakes = () => {
               No purchase necessary , subject to official rules See{" "}
               <Link
                 href="#"
-                className="text-cyan-500 hover:underline font-medium text-sm!"
+                className="text-doiblue hover:underline font-medium text-sm!"
               >
                 terms & disclaimers
               </Link>{" "}
@@ -258,7 +258,6 @@ const Sweepstakes = () => {
       <Guarantee
         title={
           <span>
-            {" "}
             How to
             <span className="text-doiblue"> Participate</span>
           </span>
@@ -273,7 +272,6 @@ const Sweepstakes = () => {
         imageHeading={false}
         imageParagraph={
           <span className="text-doiblue text-xl">
-            {" "}
             Collect enough tickets and unlock lifetime benefits with a Gold
             Membership.
           </span>
@@ -284,7 +282,7 @@ const Sweepstakes = () => {
       <Exclusive_Benefits
         data={Exclusive_Benefits_data}
         title={
-          <h2 className="text-3xl lg:text-5xl leading-[56px] text-center font-nasa  text-default-800">
+          <h2 className="text-3xl lg:text-5xl leading-14 text-center font-nasa  text-default-800">
             Why <span className="text-doiblue  font-nasa">Participate</span>
           </h2>
         }

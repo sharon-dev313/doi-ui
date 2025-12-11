@@ -18,14 +18,14 @@ const Doi_Gold_Member_List = ({ avatar, Review_text, title, list }) => {
             key={item.id}
             className="flex items-start justify-center space-x-3"
           >
-            <IoIosCheckmarkCircleOutline className="text-white mt-1 flex-shrink-0" />
+            <IoIosCheckmarkCircleOutline className="text-white mt-1 shrink-0" />
             <p className="text-white text-center text-sm">{item.text}</p>
           </div>
         ))}
       </div>
 
       {/* Button */}
-      <button className="mt-4 bg-doiorange hover:bg-doiorange/90 text-black  py-3 px-8 rounded-full text-lg transition-colors duration-300 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+      <button className="mt-4 bg-doiorange hover:bg-doiorange/90 text-black  py-3 px-8 rounded-full text-lg ">
         Buy Gold Token
       </button>
     </div>

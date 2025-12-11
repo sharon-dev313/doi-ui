@@ -16,7 +16,7 @@ const Exclusive_Benefits = ({
 }) => {
   return (
     <div
-      className={`max-w-7xl  mx-auto  py-16  ${!DoiGoldMember ? "lg:px-8 px-4  sm:px-6" : "lg-4"}  flex flex-col items-center gap-[24px] `}
+      className={`max-w-7xl  mx-auto  py-16  ${!DoiGoldMember ? "lg:px-8 px-4  sm:px-6" : "lg-4"}  flex flex-col items-center gap-6 `}
     >
       <div className="w-full flex items-center flex-col">
         {title}

@@ -78,44 +78,74 @@ const Seepstakes_Past_Winner = () => {
   ];
   const statsData = [
     {
-        id: 1,
-        value: "10",
-        label: "Total Winners",
-        icon: <img src="/images/sweepstakes-past-winners/icons/1.svg" alt="Total Winners" />,
+      id: 1,
+      value: "10",
+      label: "Total Winners",
+      icon: (
+        <img
+          src="/images/sweepstakes-past-winners/icons/1.svg"
+          alt="Total Winners"
+        />
+      ),
     },
     {
-        id: 2,
-        value: "$25,700",
-        label: "Total Prizes Awarded",
-        icon: <img src="/images/sweepstakes-past-winners/icons/2.svg" alt="Total Prizes Awarded" />,
+      id: 2,
+      value: "$25,700",
+      label: "Total Prizes Awarded",
+      icon: (
+        <img
+          src="/images/sweepstakes-past-winners/icons/2.svg"
+          alt="Total Prizes Awarded"
+        />
+      ),
     },
     {
-        id: 3,
-        value: "$2570",
-        label: "Average Prize",
-        icon: <img src="/images/sweepstakes-past-winners/icons/3.svg" alt="Average Prize" />,
+      id: 3,
+      value: "$2570",
+      label: "Average Prize",
+      icon: (
+        <img
+          src="/images/sweepstakes-past-winners/icons/3.svg"
+          alt="Average Prize"
+        />
+      ),
     },
-];
+  ];
   const statsData2 = [
     {
-        id: 1,
-        value: "Monthly Payouts",
-        label: "Receive fixed monthly payments for an extended period",
-        icon: <img src="/images/sweepstakes-past-winners/icons/8.svg" alt="Total Winners" />,
+      id: 1,
+      value: "Monthly Payouts",
+      label: "Receive fixed monthly payments for an extended period",
+      icon: (
+        <img
+          src="/images/sweepstakes-past-winners/icons/8.svg"
+          alt="Total Winners"
+        />
+      ),
     },
     {
-        id: 2,
-        value: "Thriving Community",
-        label: "Join a community of winners and investors",
-        icon: <img src="/images/sweepstakes-past-winners/icons/9.svg" alt="Total Prizes Awarded" />,
+      id: 2,
+      value: "Thriving Community",
+      label: "Join a community of winners and investors",
+      icon: (
+        <img
+          src="/images/sweepstakes-past-winners/icons/9.svg"
+          alt="Total Prizes Awarded"
+        />
+      ),
     },
     {
-        id: 3,
-        value: "More Opportunities",
-        label: "Get access to exclusive investment opportunities",
-        icon: <img src="/images/sweepstakes-past-winners/icons/10.svg" alt="Average Prize" />,
+      id: 3,
+      value: "More Opportunities",
+      label: "Get access to exclusive investment opportunities",
+      icon: (
+        <img
+          src="/images/sweepstakes-past-winners/icons/10.svg"
+          alt="Average Prize"
+        />
+      ),
     },
-];
+  ];
   const winnersData = [
     {
       id: "1",
@@ -198,17 +228,16 @@ const Seepstakes_Past_Winner = () => {
         image={"/images/sweepstakes-past-winners/banner.png"}
       />
 
-      <StoriesBehind 
-                 title = { <h2 className="text-3xl md:text-4xl lg:text-5xl font-nasa text-black shrink-0">
-              Discover the Stories Behind <br />
-              Our <span className="text-doiblue">Past Winners</span>
-            </h2>}
-            image = {"/images/sweepstakes-past-winners/house_1.png"}
-             data = {statsData}/>
-
-
-
-
+      <StoriesBehind
+        title={
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-nasa text-black shrink-0">
+            Discover the Stories Behind <br />
+            Our <span className="text-doiblue">Past Winners</span>
+          </h2>
+        }
+        image={"/images/sweepstakes-past-winners/house_1.png"}
+        data={statsData}
+      />
       <section className="w-7xl mx-auto py-16 bg-white">
         {/* Section Header */}
         <div className="flex flex-wrap justify-between items-center mb-8 gap-4">
@@ -230,22 +259,24 @@ const Seepstakes_Past_Winner = () => {
           ))}
         </div>
       </section>
-
-
-
-       <StoriesBehind 
-       right={true}
-                 title = { <h2 className="text-3xl md:text-4xl lg:text-5xl font-nasa text-black shrink-0">
-              Why Winners <span className="text-doiblue">Love Doi</span>
-            </h2>}
-            image = {"/images/sweepstakes-past-winners/house_2.png"}
-             data = {statsData2}/>
+      <StoriesBehind
+        right={true}
+        title={
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-nasa text-black shrink-0">
+            Why Winners <span className="text-doiblue">Love Doi</span>
+          </h2>
+        }
+        image={"/images/sweepstakes-past-winners/house_2.png"}
+        data={statsData2}
+      />
 
       <Gold_Member
         title={"Ready to  "}
         GoldTitle={""}
         BlueTitle={"Win"}
-        paragraph1={"Join our sweepstakes for a chance to win monthly payments and become "}
+        paragraph1={
+          "Join our sweepstakes for a chance to win monthly payments and become "
+        }
         paragraph2={"part of our growing community of winners."}
         Seepstakes={true}
         ButtonText={"Enter Sweepstakes"}

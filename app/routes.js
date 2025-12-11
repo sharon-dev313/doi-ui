@@ -10,5 +10,8 @@ export default [
          route("investment-finder/:id", "routes/investment-finder-details.jsx"),
          route("sweepstakes", "routes/Sweepstakes.jsx"),
          route("sweepstakes-past-winner", "routes/Seepstakes-Past-Winner.jsx"),
+         route("doi-construction-for-developers", "routes/doi_construction_for_developers.jsx"),
+         route("payouts", "routes/PayoutsPage.jsx"),
+         route("my-investments", "routes/my_investments.jsx"),
     ]),    
 ];

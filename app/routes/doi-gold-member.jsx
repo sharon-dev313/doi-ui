@@ -174,8 +174,7 @@ const DoiGoldMember = () => {
         image="/images/doi_gold_members/banner.png"
       />
 
-      {/* section 2 Start */}
-
+      {/* section 2 */}
       <Doi_Gold_Member
         avatar={4}
         Review_text={"500+ Reviews"}
@@ -196,9 +195,7 @@ const DoiGoldMember = () => {
         image2={"/images/doi_gold_members/house_2.png"}
       />
 
-      {/* section 2 End */}
-
-      {/* Section 3 Start  */}
+      {/* Section 3   */}
       <Benefits_List
         title={
           <span>
@@ -211,12 +208,13 @@ const DoiGoldMember = () => {
         }
         list={Benifit_data}
       />
-      {/* Section 3 End */}
+     {/* Video Section  */}
       <Video
         thumbnail={"/images/doi_gold_members/house_5.png"}
         play_icon={"/images/doi_gold_members/icons/play-circle-02.svg"}
         video_url={"https://www.pexels.com/download/video/2887459/"}
       />
+      {/* Section 5  */}
       <Exclusive_Benefits
         data={Exclusive_Benefits_data}
         title={false}
@@ -233,6 +231,7 @@ const DoiGoldMember = () => {
           " Unlock exclusive benefits, rewards, and opportunities designed for your success."
         }
       />
+      {/* Section 6  */}
       <GoldMember
         title="Are you want to become a"
         GoldTitle="DOI Gold Member?"

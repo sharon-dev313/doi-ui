@@ -8,6 +8,9 @@ const Gold_Member = ({
   ButtonText,
   ButtonFunction,
   Seepstakes,
+  Padding,
+  ButtonText2,
+  ButtonFunction2
 }) => {
   return (
     <div className="max-w-7xl  mx-auto px-4 overflow-hidden relative bg-black my-16 rounded-4xl sm:px-6 py-20 flex flex-col justify-center items-center ">
@@ -21,7 +24,7 @@ const Gold_Member = ({
       bg-[radial-gradient(circle,#04B9E8_0%,rgba(4,185,232,0.01)_100%)] opacity-35
       blur-[100px]"
       ></div>
-      <h1 className="text-5xl text-white relative z-10 text-center">
+      <h1 className={`text-5xl ${Padding && "px-20"} text-white relative z-10 text-center`}>
         {title}
        {!Seepstakes && (<br />) } {" "}
         <span className={`${GoldTitle ? "text-gold" : "text-doiblue"}`}>
@@ -34,6 +37,7 @@ const Gold_Member = ({
           {paragraph2}
         </p>
       )}
+      {!ButtonText2 && (
       <Button
         onClick={() => ButtonFunction()}
         radius="full"
@@ -41,6 +45,28 @@ const Gold_Member = ({
       >
         {ButtonText}
       </Button>
+      )}
+
+      {
+        ButtonText2 && (
+          <div className="flex gap-5" >
+             <Button
+        onClick={() => ButtonFunction()}
+        radius="full"
+        className={`relative z-10 mt-8 px-8 py-4 bg-transparent border border-doiblue  text-doiblue  font-nasa font-semibold hover:bg-primary/80 transition`}
+      >
+        {ButtonText}
+      </Button>
+ <Button
+        onClick={() => ButtonFunction2()}
+        radius="full"
+        className={`relative z-10 mt-8 px-8 py-4 ${GoldTitle? "bg-gold" : "bg-doiblue"}   text-black  font-nasa font-semibold hover:bg-primary/80 transition`}
+      >
+        {ButtonText2}
+      </Button>
+          </div>
+        )
+      }
     </div>
   );
 };

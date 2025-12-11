@@ -20,23 +20,13 @@ const Doi_GoldMember_Benefits = ({
       <p className="text-default-600 text-lg leading-relaxed max-w-lg">
         {DoiGoldMember_paragraph}
       </p>
-
+      
       {/* Button */}
       <div>
         <Button
-          className="bg-doiorange hover:bg-doiorange/90 text-black font-nasa text-lg shadow-lg hover:shadow-xl "
+          className="bg-doiorange py-4  px-8 h-auto  hover:bg-doiorange/90 text-black font-nasa text-lg shadow-lg hover:shadow-xl "
           radius="full"
           size="lg"
-          css={{
-            // Legacy NextUI prop, usually not in HeroUI v2+. Using style or className.
-            padding: "1.5rem 2.5rem",
-            height: "auto",
-          }}
-          style={{
-            padding: "1rem 2.5rem",
-            height: "auto",
-            minHeight: "3.5rem",
-          }}
         >
           Buy Tokens
         </Button>

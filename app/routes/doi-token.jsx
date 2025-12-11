@@ -152,8 +152,6 @@ export default function DoiToken() {
   ];
 
 
-
-
   const handleClickDoiToken = () => {
     // Implement the button click functionality here
     console.log("Get Started button clicked!");
@@ -167,7 +165,6 @@ export default function DoiToken() {
         title2={"DOI MEMBERSHIP"}
         image={"/images/doi-token/Banner.png"}
       />
-
       {/* Discover the DOI Token (NFT) Start */}
       <Doi_token_SubSec
         title={
@@ -183,7 +180,6 @@ export default function DoiToken() {
         ImageItems1={"/images/doi-token/home-1.png"}
         ImageItems2={"/images/doi-token/home-2.png"}
       />
-
       {/* Discover the DOI Token (NFT) End */}
 
       <Exclusive_Benefits
@@ -206,7 +202,6 @@ export default function DoiToken() {
       text={"Happy customers worldwide"}
       
       />
-
       <Doi_token_SubSec
         title={
           <h2 className="text-3xl lg:text-5xl leading-14 font-nasa  text-default-800">
@@ -228,7 +223,6 @@ export default function DoiToken() {
         ListItems={sweepstakesData}
         sweepstakesCountData={sweepstakesCountData}
       />
-
       <Gold_Member
       
            title={"Are you want to become a"}
@@ -239,7 +233,6 @@ export default function DoiToken() {
         ButtonFunction={() => handleClickDoiToken()}
       
       />
-
       <Doi_token_SubSec
         title={
           <h2 className="text-3xl lg:text-5xl font-nasa leading-14 text-default-800">
@@ -259,9 +252,7 @@ export default function DoiToken() {
         ListItems={sweepstakesData}
         FAQ={true}
         FaqItems={FaqItemsData}
-      />
-
-      
+      /> 
     </div>
   );
 }

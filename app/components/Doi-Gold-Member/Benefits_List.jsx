@@ -5,8 +5,6 @@ const Benefits_List = ({ title, paragraph, list }) => {
     <div className="bg-doiorange p-4 md:p-8 lg:p-16 min-h-screen flex flex-col items-center justify-center">
       <Heading title={title} paragraph={paragraph} />
       <div className="max-w-7xl w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-fr">
-        {/* Row 1 */}
-        {/* Card 1 */}
         {list?.map((item) =>
           // IMAGE BLOCK
           item.image_url ? (

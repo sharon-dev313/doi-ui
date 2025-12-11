@@ -24,7 +24,7 @@ const Progress_Card = () => {
               aria-label="Token Earned"
               value={68}
               classNames={{
-                track: "bg-gray-900 h-6 rounded-full",
+                track: "bg-default-900 h-6 rounded-full",
                 indicator: "bg-doiorange h-6 rounded-full",
                 base: "w-full",
               }}
